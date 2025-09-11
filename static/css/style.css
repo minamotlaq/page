@@ -1,0 +1,150 @@
+
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+
+body,h6 {
+  font-family: 'Vazir', Tahoma, sans-serif;
+  font-size: 12px; 
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 100px;
+  direction: ltr;
+  justify-content: center; 
+  align-items: center;      
+}
+
+.item {
+  text-align: center;
+  /* color: #55cabb; */
+  color: #e7c013e7
+}
+
+.item img {
+  width: 100%;
+  max-height: 40px;  
+  object-fit: contain;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 20px rgba(40, 40, 41, 0.15);
+  transition-behavior: unset;
+}
+
+.item a {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  color: lightseagreen; 
+  text-decoration: none;
+  line-height: 1.2;
+  margin-top: 3px;
+}
+
+.item a:hover {
+  color:  #55cabb !important;
+  text-decoration: underline !important;
+}
+
+
+.item {
+  position: relative;
+  display: inline-block;
+  border-radius: 25px; 
+  overflow: hidden;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.3s ease;
+  filter: brightness(0.3); 
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;  
+  background: #7ae4d6;
+  opacity: 0;            
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* click bere laye zir*/
+}
+
+.item:hover::after {
+  opacity: 0.5;  
+}
+
+.header-container {
+    background-color: #f5f5f5;
+    padding: 20px 40px; 
+    border-bottom:solid #b2beba;
+    font-family: 'IRANSans';
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: fixed;  
+    top: 0;          
+    left: 0;
+    z-index: 1000;     
+    background: #fff;  
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1),  
+                0 -10px 10px rgba(0, 0, 0, 0.05); 
+    padding: 20px 40px; 
+}
+
+
+.header-logo {
+    width: 130px;
+    height: auto;
+    margin-left:30px;
+   
+}
+
+.header-address {
+    font-family: 'Vazir', Tahoma, sans-serif; 
+    color: #39ad9e;
+    line-height: 1.8;
+    font-weight: 600; 
+    }
+
+/* SAYE DIDE BESHE */
+#bannerCarousel .carousel-inner {
+  overflow: visible !important;
+}
+
+
+#bannerCarousel .carousel-item > .d-flex {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF !important; 
+  box-shadow: 
+    0 -10px 5px rgba(131, 150, 102, 0.22), 
+    0 5px 5px rgba(93, 124, 90, 0.22) !important; 
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(47%) sepia(74%) saturate(432%) hue-rotate(83deg) brightness(92%) contrast(88%);
+}
+ */
+
+
+
+
+
